@@ -13,7 +13,7 @@ namespace Tesing.Controllers
         public ActionResult About(Table_1 Users)
         {
             var result = usrtbl.insert_User(Users);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Home", "About");
         }
         [HttpGet]
 
